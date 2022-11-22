@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zegarek JS</title>
+    <link rel=stylesheet href="styles.css">
+  </head>
+  <body>
+    <div class="clock">
+      <div class="clock_wrapper">
+        <h1 class="clock_title">Zegarek w JavaScript</h1>
+        <div class="clock_container clock_container--is-active"></div>
+        <div class="clock_hand"></div>
+        <div class="clock_hand clock_hand--is-minutes"></div>
+        <div class="clock_center_of_clock"></div>
+        <div class="clock_number1">1</div>
+        <div class="clock_number2">2</div>
+        <div class="clock_number3">3</div>
+        <div class="clock_number4">4</div>
+        <div class="clock_number5">5</div>
+        <div class="clock_number6">6</div>
+        <div class="clock_number7">7</div>
+        <div class="clock_number8">8</div>
+        <div class="clock_number9">9</div>
+        <div class="clock_number10">10</div>
+        <div class="clock_number11">11</div>
+        <div class="clock_number12">12</div>
+        <div class="clock_seconds_circle">
+            <svg>
+                <defs>
+                    <lineargradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#ff8a00">
+                        <stop offset="100%" stop-color="#e52e71">
+                    </lineargradient>
+                </defs>
+                <circle cx="150" cy="150" r="150" stroke="url(#linear)"></circle>
+            </svg>
+        </div>
+        <div class="clock_container clock_container--is-digital">
+            <p class="clock_time">
+                <span id="js-hours_digital">00</span>:<span id="js-minutes_digital">00</span>:<span id="js-seconds_digital">00</span>
+            </p>
+        </div>
+        <button class="clock_button" id="js_toggle_mode" type="button">Przełącz Tryb</button>
+      </div>
+    </div>
+  </body>
+</html>
